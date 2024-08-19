@@ -1,0 +1,92 @@
+19-08-2024
+================
+Selenium WebDriver
+------------------------
+Selenium WebDriver is an interface
+Selenium WebDriver is an API for webUI Automation
+=========================================================
+Selenium Setup
+=====================
+1.Using java Project
+=======================
+1.create a java project
+2.download selenium client library from selenium.dev site
+3.right click on project-->buil path--->configure build path--->libraries
+-->class path--->add external library
+
+
+2.Using Maven Project
+========================================
+What is Maven
+----------------
+Maven is build management tool as well as Project mangement tool
+
+Maven has one configuration file(POM.xml file)
+=======================================
+POM is project object model 
+it is configuration file for all project setup
+
+Structure
+============
+
+<project>
+<depedencies>
+<dependency> selenium</dependency>
+</dependencies>
+
+<build>
+<plugins>
+</plugins>
+</build>
+
+</project>
+
+============================================
+What is Dependency?
+====================
+It is a library file(executable file)
+
+How many repository maven support?
+=====================================
+Two repository maven Support
+1.Remote/share/central (mvnrepository.com)
+2.Local repository
+(c/user/m2 folder/repo)
+=======================================================
+WebDriver Browser Commands
+================================
+1.get(url)-open application
+2.getTitle()- get the title from application
+3.getCurrentUrl()- get the current url of application
+4.getPageSource()- get the page source
+5.close()- close the current browser
+6.quit()- close all open browsers/windows open by selenium
+
+WebDriver Navigations commands
+===================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
