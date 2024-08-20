@@ -1,0 +1,13 @@
+
+Assignment1:
+Write automation script to open Google
+Then navigate to amazon 
+capture title of both application
+then navigate back to Google from amazon
+Capture current url of Google
+Then navigate forward and get the current url of amazon
+and validate Title of amazon should contains Online Shopping.
+and close the browser
+
+--------------------------------------------------------
+

@@ -53,6 +53,26 @@ Two repository maven Support
 2.Local repository
 (c/user/m2 folder/repo)
 =======================================================
+20-08-2024
+===================
+
+TestCase: validate Google application title which should be Google
+
+Step1: Open browser with Google application
+Step2: Get the actual title from application
+Step3: Compare actual vs expected title
+Step4: Display appropriate result
+Step5: close the browser/application
+
+Exceptions In Selenium
+==============================
+1.If wrong url address provided
+InvalidArgumentException: invalid argument
+
+
+
+
+
 WebDriver Browser Commands
 ================================
 1.get(url)-open application
@@ -62,8 +82,138 @@ WebDriver Browser Commands
 5.close()- close the current browser
 6.quit()- close all open browsers/windows open by selenium
 
+=======================================================================
 WebDriver Navigations commands
 ===================================
+To perform navigation Selenium Support Navigation Interface
+
+1.to(url)
+------------
+driver.navigate().to(url)
+
+2.back()
+-----------
+driver.nabigate().back()
+
+3.forward()
+----------------
+driver.navigate().forward()
+
+4.refresh()
+------------
+driver.navigate().refresh()
+
+===============================================================
+How to automate any WebElement
+======================================
+WebElement?
+============
+In general every web page designed with UI elements
+textboxes,checkbox,link,button,dropdown
+So in selenium we can called this as WebElement
+
+In Technical Word WebElement is interface in selenium
+
+1.To interact with any webelement first get the address of webelement
+2.Identify webelement and perform action
+
+1.To get the address Selenium Supports Locators
+====================================================
+What is Locator?
+====================
+Locators is address of webElement from WebPage
+
+Selenium Support Total 8 locators
+=======================================
+1.By id
+2.By name
+3.By className
+4.By linkText
+5.By partialLinkText
+6.By tagName
+
+Dynamic Loctaors
+=====================
+7.By cssSelector
+8.By xpath
+
+
+What is By?
+=================
+By is a class in selenium which help to get the address
+
+
+Primary locators in selenium
+=============================
+By id
+
+To identify Any WebElement selenium support two method
+===========================================================
+1.findElement()
+
+2.findElements()
+
+
+==================================================
+Actions on WebElement
+========================
+textbox,searchbox--->Pass data----->sendKeys("data",Keys.Keyboard key)
+button,link,checkbox,radio button--->click---->click()
+To clear any text/data-------->clear()
+
+========================================================
+Validate any WebElement
+===========================
+isDisplayed()
+isEnabled()
+isSelected()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
