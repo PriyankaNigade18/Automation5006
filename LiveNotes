@@ -168,6 +168,148 @@ isDisplayed()
 isEnabled()
 isSelected()
 
+====================================================
+21-08-2024
+==============
+To identify Any WebElement selenium support two method
+===========================================================
+1.findElement()
+-------------------
+- findElement helps to identify single webelement
+- It returns WebElement interface object
+- If Element not found then it throws NoSuchElementException
+
+
+2.findElements()
+----------------------
+- findElements() will help to identify multiple WebElements
+- It returns List<WebElement> Object
+- If Element not found It will not throws any exception
+In case of List --->[]
+In case of size()--->0
+
+=================================================================
+How to maximize size of browser
+===================================
+driver.manage().window().maximize();
+
+className Locator
+=========================
+
+
+class="form-control"
+
+class="btn btn-primary"
+
+InvalidSelectorException: Compound class names not permitted
+
+class="btn btn-default btn-primary"
+
+=================================================
+How to automate any HyperLink in Selenium
+============================================
+<a id="SignIn" href="login.html">Sign In</a>
+<a>Link Text </a>
+
+1.By linkText
+--------------------
+will do exact match
+driver.findElement(By.linkText("Sign In")).click();
+
+2.By partialLinkText
+-----------------------
+will do partial match
+
+driver.findElement(By.partailLinkText("In")).click();
+
+=========================================
+Synchronization Issue in Selenium
+==================================
+Time mapping issue btween application and tool
+
+Selenium Support two dynamic Waits
+====================================
+1.Implicit wait
+========================
+- Globally applicable to all the elements from script
+- onece you create driver session apply global wait
+
+driver.manage().timeOuts().implicitlyWait(Duration.ofSeconds(10));
+Element =6 sec
+Wait time=10sec
+remaining 4 sec selenium will not wait it will continue with next element
+
+
+2.Explicit wait
+=======================
+
+
+
+===============================================================
+By tagName
+=================
+Number of Links
+Number of Images
+Number of textBoxes
+
+WebElement Methods(special)
+=============================
+1.getAttribute()
+-----------------------
+This methods returns attribute value
+
+2.getText()
+-------------------
+To get any visible text of element we use getText()
+hidden html text alos we can get using getText()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
