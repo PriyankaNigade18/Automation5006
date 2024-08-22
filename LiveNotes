@@ -1,3 +1,7 @@
+
+9552671595
+
+
 19-08-2024
 ================
 Selenium WebDriver
@@ -262,6 +266,222 @@ This methods returns attribute value
 -------------------
 To get any visible text of element we use getText()
 hidden html text alos we can get using getText()
+====================================================================
+22-08-2024
+=================
+Dynamic Locators
+=====================
+1.By cssSelector
+=======================
+
+What is css?
+================
+Css means cascaded style sheet is a language to provide style to html element
+
+What is cssSelector?
+====================
+- It is locator to identify element based on css attribute
+- faster than xpath as it travels only iin one direction (parent--->child)
+- It doesn't support method
+
+
+
+1.tagname with id
+-------------------
+Syntax:
+============
+tagname#id
+
+<input id="user-name" name="user-name" value="">
+
+input#user-name
+
+
+2.tagname with attribute
+-------------------------
+Syntax
+-----------
+tagname[attribute='value']
+
+input[placeholder='Password']
+
+3.tagname with classname
+-------------------------
+Syntax:
+-------------
+tagname.classNamevalue
+
+class="submit-button btn_action"
+
+input.submit-button.btn_action
+
+.tagname with id,classname and attribute
+--------------------------------------------
+Syntax:
+--------------
+tagname#id.classname[attribite='value']
+
+<input type="submit" class="submit-button btn_action"  id="login-button">
+
+input#login-button.submit-button[type='submit']
+
+
+=======================================================================
+2.By xpath
+====================
+What is xpath
+===================
+xpath is path of the element from xml/html document
+xpath identify element from directly DOM(Doument Object Model)
+xpath can travel from parent to child and child to parent
+xpath support multiple multiple
+xpath axies
+
+=================================
+HTML DOM Structue
+=========================
+<html>---------root node
+<head>
+</head>
+
+<body>
+<input>---------------element
+<a>
+
+</body>
+
+</html>
+
+========================================================================
+Types of Xpath
+==================
+1.Absolute xpath
+==================
+	- absolute xpath always identify element from the root node
+	- It starts with '/'
+	/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input
+
+2.Relative xpath
+==================
+	-relative xpath identify element from its relative property
+	-It starts with '//'
+
+//*[@id="user-name"]
+* = all
+===================================================
+Syntax:
+==================
+//tagname[@attribute='value']
+
+========================================
+xpath with operators
+=======================
+1.xpath with AND
+======================
+//tagname[@attribute='value' and @attribute='value']
+
+
+1.xpath with OR
+======================
+//tagname[@attribute='value' or @attribute='value']
+
+xpath with index/position()
+================================
+Syntax:
+============
+xpath------multiple elements
+
+(xpath)[index]
+
+
+position()
+=============
+Syntax:
+==============
+(xpath)[porsition()=idex]
+=======================================================
+xpath Methods
+==================
+1.text()
+2.normalize-space()
+3.contains()
+4.starts-with()
+
+
+xpath Axies
+==================
+1.ancestor
+2.parent
+3.child
+4.preceding sibling
+5.following sibling
+6.following
+7.preceding
+
+================================================
+Selenium 4 relative xpath
+================================
+
+=============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

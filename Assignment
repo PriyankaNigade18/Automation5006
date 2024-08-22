@@ -19,3 +19,44 @@ Assignment3:
 W.A.Script to automate https://www.naukri.com/ page
 get total count of links
 Print href value and text of every link into console
+===============================================================
+Assignment 4
+===================
+Use URL: https://tutorialsninja.com/demo/index.php?route=account/register
+
+W.A. Script for register page 
+- for radio button confirm if button is not selected then select the same(yes)
+
+Assignment5
+===================
+1.Automate amazon Footer list(xpath)
+2.Automate Orangehrm login and logout using cssSelector
+3.Automate Orangehrm login and logout using xpath
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
