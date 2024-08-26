@@ -1,5 +1,5 @@
 
-9552671595
+
 
 
 19-08-2024
@@ -400,28 +400,152 @@ Syntax:
 ==============
 (xpath)[porsition()=idex]
 =======================================================
+26-08-2024
+==================
 xpath Methods
 ==================
 1.text()
+============
+Syntax:
+----------------
+//tagname[text()='text']
+
 2.normalize-space()
+=======================
+If you want to ignore white space (trim) we use this method
+
+Syntax:
+==========
+//tagname[normalize-space()='text']
+
 3.contains()
+=============
+
+Syntax:
+==========
+//tagname[contains(@attribute,'value')]
+or
+//tagname[contains(text(),'text']
+
 4.starts-with()
+==================
+Syntax:
+==========
+//tagname[starts-with(@attribute,'value')]
+or
+//tagname[starts-with(text(),'text']
 
 
 xpath Axies
 ==================
 1.ancestor
-2.parent
-3.child
-4.preceding sibling
-5.following sibling
-6.following
-7.preceding
+=============
+Syntax:
+==========
+//tagname[@attribute='value']//ancestor::tagname of ancestor
+find the john ancestor tbody
+------------------------------
+//td[text()='John']//ancestor::tbody
 
-================================================
+
+
+2.parent
+============
+Syntax:
+==========
+//tagname[@attribute='value']//parent::tagname of parent
+
+find the john parent node
+------------------------------
+//td[text()='John']//parent::tr
+
+3.child
+==============
+Syntax:
+==========
+//tagname[@attribute='value']//child::tagname of child
+Get the all child text/count of row4
+=================================
+//tbody//tr[4]//child::td
+
+6.following
+================
+Syntax:
+==========
+//tagname[@attribute='value']//following::tagname of following element
+
+get all the count of tr(row) after john
+===================================
+//td[text()='John']//following::tr-----------2 rows
+
+7.preceding
+===================
+Syntax:
+==========
+//tagname[@attribute='value']//preceding::tagname of preceding element
+
+
+Get all preceding rows
+======================
+//td[text()='John']//preceding::tr
+
+4.Following sibling
+======================
+Syntax:
+==========
+//tagname[@attribute='value']//following-sibling::tagname of following-sibling element
+
+get all following sibblings of John
+=========================================
+//td[text()='John']//following-sibling::td  3
+
+5.Preceding sibling
+===========================
+Syntax:
+==========
+//tagname[@attribute='value']//preceding-sibling::tagname of preceding-sibling element
+
+
+get all the preceding siblings of John
+===========================================
+//td[text()='John']//preceding-sibling::td
+
+<table id="customers" class="table">
+
+        <tbody>--------ancestor
+
+        <tr>-------->parent
+ 
+         <td>4</td>-------------preceding sibling
+
+          <td>John</td>-------Element
+
+          <td>Robinson</td>---------following sibling
+
+          <td>jr5527</td>
+ 
+         <td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>
+
+        </tr>
+      
+      </tbody>
+    </table>
+
+
+Smaple xpath includes methods+Axies
+======================================
+(//input[@id='twotabsearchtextbox']//preceding::div//span[contains(@id,'glow-ingress')])[1]
+===============================================
 Selenium 4 relative xpath
 ================================
-
+above()
+below()
+toRightOf()
+toLeftOf()
+near()
 =============================================================================
 
 
