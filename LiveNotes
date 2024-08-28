@@ -547,6 +547,87 @@ toRightOf()
 toLeftOf()
 near()
 =============================================================================
+27-08-2024
+================
+Dropdown Automation
+=========================
+
+1.Select tag based dropdown
+================================
+Automate such dropdown using Select class
+
+Select dd=new Select(dropdown ele);
+
+Is dropdown support multiple value selection?
+isMultiple()
+
+single Option Selection
+----------------------------
+1.selectByIndex()
+2.selectByVisibleText()
+3.selectByValue()
+
+To get all the options from the dropdown
+==========================================
+getOptions()
+
+---------------------------------------------
+2.Bootstarp/Javascript/autosuggesion
+============================================ 
+xpath
+============================================================
+TestNG- framework
+==================
+Alert handling
+=================
+alert is javascript alert
+In selenium we have Alert interface to handle alert
+
+Alert interface provides 4 methods
+===================================
+1.To get the text of alert- getText()
+2.To interact with Ok---->accept()
+3.To interact with cancel--->dismiss()
+4.to prompt----->sendKeys()
+
+Types
+===============
+1.Normal Alert with Ok button
+2.confirmation alert ok and cancel
+3.prompt alert
+
+
+How to handle authentication alert
+======================================
+
+
+
+
+
+
+
+window handling
+newTab,new window
+calendar
+html table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
