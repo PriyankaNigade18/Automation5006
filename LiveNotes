@@ -600,14 +600,59 @@ Types
 How to handle authentication alert
 ======================================
 
+//https://username:password@Url
 
 
+========================================================
+Window handling
+=========================
+How to handle multiple Window in Selenium
+==========================================
+
+1.getWindowHandle()-:Parent Window
+---------------------------------------
+This method always return String
+
+2.getWindowHandles():- All Parent +child window
+----------------------------------------------
+This return Set<String>
 
 
-
-
-window handling
+Selenium 4 new feature
+-----------------------
 newTab,new window
+
+newWindow()
+---------------
+newWindow() returns WebDriver interface object
+driver.switchTo().newWindow(WindowType.TAB);
+driver.switchTo().newWindow(WindowType.WINDOW);
+=========================================================
+Frame handling
+===================
+Frame is one html document embeded into another html document.
+
+tags
+==========
+<frame>
+<iframe>
+
+Frame handling
+====================
+driver.switchTo().frame(id)
+driver.switchTo().frame(name)
+driver.switchTo().frame(index)
+driver.switchTo().frame(WebElement ele)
+
+
+Types
+=============
+Normal frame
+Nested frame
+
+
+Scenarios
+=================
 calendar
 html table
 
