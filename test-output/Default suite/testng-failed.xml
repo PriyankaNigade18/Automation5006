@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementHandlingWithTestNG.FrameDemo2">
+      <class name="com.WebElementHandlingWithTestNG.GoibiboCalendar">
         <methods>
-          <include name="frameTest"/>
+          <include name="testDatePicker"/>
         </methods>
-      </class> <!-- com.WebElementHandlingWithTestNG.FrameDemo2 -->
+      </class> <!-- com.WebElementHandlingWithTestNG.GoibiboCalendar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

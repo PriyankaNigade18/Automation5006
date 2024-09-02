@@ -645,16 +645,43 @@ driver.switchTo().frame(index)
 driver.switchTo().frame(WebElement ele)
 
 
+2-09-2024
+======================
 Types
 =============
 Normal frame
 Nested frame
 
+JavascriptExecutor
+=====================
+In Selenium JavascriptExecutor is interface
 
+scroll
+refresh
+title
+element+click
+============================
 Scenarios
 =================
 calendar
+done
+==============
+Wait()
+=============
 html table
+
+Actions Class-mouse
+Robot class-Keyboard
+
+Capabilities 
+==================
+What is headless browser test
+============================
+
+
+===========================
+TestNG Framework
+==========================
 
 
 
