@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementHandlingWithTestNG.GoibiboCalendar">
+      <class name="com.WaitInSelenium.DynalicLoadingScenario">
         <methods>
-          <include name="testDatePicker"/>
+          <include name="testWebDriverWait"/>
         </methods>
-      </class> <!-- com.WebElementHandlingWithTestNG.GoibiboCalendar -->
+      </class> <!-- com.WaitInSelenium.DynalicLoadingScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

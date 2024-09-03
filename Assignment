@@ -47,9 +47,23 @@ Write automation script to open first google then open
  facebook application 10 times in 10 different tab
 
 
+Assignment on WebTable
+========================
+Automate https://automationplayground.com/crm/ and write a script for webtable
+1.Number of Heading and print the same
+2.Number of rows
+3.Number of cells
+4.Row 4 data
+5.All customers name only
+6.get all data and print inside console
 
+Automate for right click 
+https://the-internet.herokuapp.com/context_menu
 
-
+Try to automate
+1.slider- clickandhold--->moveToElement(ele,x(100),y)
+2.Resizing-- movetoElement--->draganddrop(offset x,y)
+3.tooltip
 
 
 

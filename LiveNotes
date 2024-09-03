@@ -229,7 +229,7 @@ driver.findElement(By.partailLinkText("In")).click();
 =========================================
 Synchronization Issue in Selenium
 ==================================
-Time mapping issue btween application and tool
+Time mapping issue between application and tool
 
 Selenium Support two dynamic Waits
 ====================================
@@ -246,8 +246,11 @@ remaining 4 sec selenium will not wait it will continue with next element
 
 2.Explicit wait
 =======================
+- Explicit wait is applicable only for single webelement at a time
+1.WebDriverWait class
+2.FluentWait class
 
-
+WebDriverWait(c) extends FluentWait(c)implements Wait(I)
 
 ===============================================================
 By tagName
@@ -666,11 +669,57 @@ Scenarios
 calendar
 done
 ==============
+3-09-2024
+====================
 Wait()
-=============
-html table
+-------------
+Synchronization Issue in Selenium
+==================================
+Time mapping issue between application and tool
 
+Selenium Support two dynamic Waits
+====================================
+1.Implicit wait
+========================
+- Globally applicable to all the elements from script
+- onece you create driver session apply global wait
+
+driver.manage().timeOuts().implicitlyWait(Duration.ofSeconds(10));
+Element =6 sec
+Wait time=10sec
+remaining 4 sec selenium will not wait it will continue with next element
+
+
+2.Explicit wait
+=======================
+- Explicit wait is applicable only for single webelement at a time
+1.WebDriverWait class
+2.FluentWait class
+
+WebDriverWait(c) extends FluentWait(c)implements Wait(I)
+=====================================================
+html table/WebTable
+==================
+Scenario:
+================
+1.Number of rows
+2.Number columns
+3.Print specific row
+4.Print specific column
+5.Print the data
+6.Print the data of table
+=================================
 Actions Class-mouse
+=========================
+In selenium to handle any mouse operation we have Actions class available
+
+Actions act=new Actions(driver);
+
+Note:
+==========
+If you are performing one single action then use perform()
+If ypu are performing at a time multiple actions then use build().perform() 
+
 Robot class-Keyboard
 
 Capabilities 
