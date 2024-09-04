@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WaitInSelenium.DynalicLoadingScenario">
+      <class name="com.Capabilities.HeadlessTest">
         <methods>
-          <include name="testWebDriverWait"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- com.WaitInSelenium.DynalicLoadingScenario -->
+      </class> <!-- com.Capabilities.HeadlessTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

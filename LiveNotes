@@ -718,19 +718,129 @@ Actions act=new Actions(driver);
 Note:
 ==========
 If you are performing one single action then use perform()
-If ypu are performing at a time multiple actions then use build().perform() 
+If you are performing at a time multiple actions then use build().perform() 
+
 
 Robot class-Keyboard
+==========================
+Packages
+===========
+import java.awt.Robot;
+import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+
+//Clip board action
+StringSelection sc=new StringSelection("Path Of file");
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sc,null);
+
+keyPress()
+keyRelease()
 
 Capabilities 
 ==================
+To customize any browser session we can setup certain capabilities
+{Key: value}
+
+In selenium
+==============
+Chorme---->ChromeOptions class
+---------------------------------
+https://developer.chrome.com/docs/chromedriver/capabilities
+firefox--->FirefoxOptions class
+edge--->EdgeOptions class
+
 What is headless browser test
 ============================
+selenium 3--->HTMLDriver
 
+ChromeOptions options=new ChromeOptions();
+		options.addArguments("--disable-search-engine-choice-screen");
+		WebDriver driver=new ChromeDriver(options);
+
+
+
+//current directory path
+System.getPriperty("user.dir");
 
 ===========================
 TestNG Framework
 ==========================
+
+TestNg is unit testing framework inspired by JNUIT
+In TestNG complete execution Control By testng.xml file
+
+what is testng.xml file
+===============================
+This is configuration file 
+complete testng is based on xml file
+
+<suite>
+<test name="test1>
+<classes>
+<class name="package.classname"/>
+<class name="pacjage.classname></class>
+</classes>
+</test>
+
+<test name="test2">
+<classes>
+<class name="package.classname"/>
+<class name="pacjage.classname></class>
+</classes>
+</test>
+</suite>
+
+===================================
+
+@Test-Annotation ==testcase
+Arguments
+==============
+1.priority
+------------------
+In testng every test execute by default in alphabetical order 
+Using priority=number we can change the order of execution.
+
+2.invocationCount
+-------------------------
+To execute testcase multiple number of time
+
+How to disable any test execution
+=======================================
+1.Using attribute enabled=false
+2.Using testng.xml-->we can exclude the method(testcase)
+
+3.enabled=false
+--------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
