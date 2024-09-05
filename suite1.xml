@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.TestNGFramework.TestNGDemo8_DependsOnMethod"/>
+      <class name="com.TestNGFramework.TestNGDemo4_disableTest"/>
+      <class name="com.TestNGFramework.TestNGDemo3_invocationCount"/>
+      <class name="com.TestNGFramework.TestNGDemo5_timeouts"/>
+      <class name="com.TestNGFramework.TestNGDemo7_Assertion"/>
+      <class name="com.TestNGFramework.TestDemo2_priorityArgument"/>
+      <class name="com.TestNGFramework.TestNGDemo6_AssertionTest_Google"/>
+      <class name="com.TestNGFramework.TestNGDemo1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

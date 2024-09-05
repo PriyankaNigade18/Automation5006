@@ -1,6 +1,7 @@
 package com.TestNGFramework;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class TestNGDemo3_invocationCount
 {

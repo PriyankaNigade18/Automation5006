@@ -66,7 +66,10 @@ Try to automate
 3.tooltip
 
 
-
+Assignment on TestNG
+=======================
+1.Automate https://demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F this application 
+for register and login and use data from xml file
 
 
 

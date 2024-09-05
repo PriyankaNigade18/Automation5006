@@ -808,13 +808,132 @@ To execute testcase multiple number of time
 How to disable any test execution
 =======================================
 1.Using attribute enabled=false
+------------------
+enabled=false
+
+================================================
+5-09-2024
+================
 2.Using testng.xml-->we can exclude the method(testcase)
+----------------------------------------------------------
 
-3.enabled=false
+<class name=" com.TestNGFramework.TestNGDemo4_disableTest"> 
+<method name="verifyApplication"/>
+<method name="verifyApplication"/>
+<method name="verifyApplication"></method>
+
+ <methods>
+      	<exclude name="verifyCurrentUrl"></exclude>
+  </methods>
+</class>
+
+
 --------------------------
+4.timeout
+==================
+Used to set execution timeout to our test case
+================================================
+Assertion in TestNG/Selenium
+================================
+To validate current state of the application we uuse assertion
+Types:
+==========
+1.Hard assertion(assert)
+====================
+Assert class which has all static methods
+
+2.Soft assertion(verify)
+=============================
+SoftAssert class 
+
+
+Methods
+==========
+1.assertEquals(act,exp);
+2.assertTrue(True)
+3.assertFalse(false)
+
+Q: When assertion will fail which exception you will get
+===================================================
+When Assertion fail you will get AssertionError from java.lang
+
+==================================================
+5.dependesOnMethod
+==========================
+To set dependency between test cases we use argument dependsOnMethod
+===================================================
+How to run failed test cases in Selenium?
+==========================================
+Under test-output folder--->testng.failed.xml file --->run this
+=====================================================
+
+TestNG xml file usage
+==========================
+1.Test suite creation
+Test suite: collection of test cases is called tets suite
+Test grouping /test method include/exclude
+Parallel test  and cross browser test
+Testng xml use to pass test data
+
+Grouping in TestNG
+====================
+Multiple test case if you want to run as group then we use testng grouping
+(groups = "regressionTest")
+To run use xml file
+Groups mostly we apply at suite level and test level
+
+how to create test suite using testng
+===========================================
+done--using xml file
+======================================================
+
+Test data for TestNG
+=====================
+1.Using xml file -->(@Parameters)
+===========================
+test data as parameter
+in xml file
+-----------------
+<parameter name="un" value="Priyanka"/>
+
+
+2.Using Properties file
+
+Annotations in TestNG
+=======================
 
 
 
+
+Hybrid Driven Framework
+==========================
+
+Cross browser Test/Parallel Test
+==================================
+
+
+
+
+
+
+
+Data driven Framework
+==========================
+1.Using array
+2.Using Excel File-->Apache POI
+
+
+Screenshots
+================
+
+Reporting
+===============
+1.Listeners
+2.Extent Report
+
+
+Cucumber
+=================
 
 
 
