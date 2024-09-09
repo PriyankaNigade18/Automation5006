@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGFramework.TestData.TestDataUsingXMLFile">
+      <class name="com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario">
         <methods>
-          <include name="testXMlFile"/>
+          <include name="verifySignIn"/>
+          <include name="validateLogin"/>
+          <include name="verifySignOut"/>
         </methods>
-      </class> <!-- com.TestNGFramework.TestData.TestDataUsingXMLFile -->
+      </class> <!-- com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -898,23 +898,74 @@ in xml file
 
 
 2.Using Properties file
+=========================
+Properties file keeps information in the form of Key=value
+It is used to store configuration data
 
-Annotations in TestNG
+1.create properties file .properties
+2.To read this we use Properties class from java
+
+
+Object Repository
+=================
+Which contain information about objects key=value
+Selenium does not have any object repository
+We can implement it using'
+1.Using properties file
+2.Using page Object model design pattern
+
+
+Annotations in TestNG(Rules)
 =======================
+For Suite
+=============
+@BeforeSuite
+@AfterSuite
+
+For test
+============
+@BeforeTest
+@AfterTest
 
 
+For class
+================
 
+class
+@Beforeclass 
+@AfterClass
 
-Hybrid Driven Framework
+@BeforeMethod-----@Test
+@AfterMethod-------@Test
+
+@Test
+login()
+
 ==========================
+Page Object Model
+========================
+It is a design pattern for objects
+
+Where we keep object info(locators +action method) in class that is called Page class
+and we keep testcase+assertion in one class called testClass
+
+Advantages
+===============
+code reusability improved
+Maintain the code
+changes are easy
+avoid code duplication
+
+Ways
+============
+1.using By locator
+2.Using PageFactory
+
+
+
 
 Cross browser Test/Parallel Test
 ==================================
-
-
-
-
-
 
 
 Data driven Framework
@@ -925,6 +976,10 @@ Data driven Framework
 
 Screenshots
 ================
+
+
+Hybrid Driven Framework
+==========================
 
 Reporting
 ===============

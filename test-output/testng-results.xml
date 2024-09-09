@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-05T22:02:16 IST" name="Suite" finished-at="2024-09-05T22:02:25 IST" duration-ms="8459">
+  <suite started-at="2024-09-09T22:00:11 IST" name="Default suite" finished-at="2024-09-09T22:00:18 IST" duration-ms="7255">
     <groups>
     </groups>
-    <test started-at="2024-09-05T22:02:16 IST" name="Test" finished-at="2024-09-05T22:02:25 IST" duration-ms="8459">
-      <class name="com.TestNGFramework.TestData.HrmLoginUsingXML">
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGFramework.TestData.HrmLoginUsingXML@3b6ddd1d]" started-at="2024-09-05T22:02:16 IST" name="testLogin" finished-at="2024-09-05T22:02:25 IST" duration-ms="8386" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-09-09T22:00:11 IST" name="Default test" finished-at="2024-09-09T22:00:18 IST" duration-ms="7255">
+      <class name="com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:11 IST" name="setUp" finished-at="2024-09-09T22:00:15 IST" duration-ms="4261" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- com.TestNGFramework.TestData.HrmLoginUsingXML -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getUrl()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:15 IST" name="getUrl" finished-at="2024-09-09T22:00:15 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method signature="verifySignIn()[pri:1, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:15 IST" name="verifySignIn" finished-at="2024-09-09T22:00:16 IST" duration-ms="978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignIn -->
+        <test-method is-config="true" signature="getApptitle()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:16 IST" name="getApptitle" finished-at="2024-09-09T22:00:16 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApptitle -->
+        <test-method is-config="true" signature="getUrl()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:16 IST" name="getUrl" finished-at="2024-09-09T22:00:16 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method signature="validateLogin()[pri:2, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:16 IST" name="validateLogin" finished-at="2024-09-09T22:00:17 IST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="getApptitle()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:17 IST" name="getApptitle" finished-at="2024-09-09T22:00:17 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApptitle -->
+        <test-method is-config="true" signature="getUrl()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:17 IST" name="getUrl" finished-at="2024-09-09T22:00:17 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method signature="verifySignOut()[pri:3, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:17 IST" name="verifySignOut" finished-at="2024-09-09T22:00:18 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOut -->
+        <test-method is-config="true" signature="getApptitle()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:18 IST" name="getApptitle" finished-at="2024-09-09T22:00:18 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApptitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario@4dbb42b7]" started-at="2024-09-09T22:00:18 IST" name="tearDown" finished-at="2024-09-09T22:00:18 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

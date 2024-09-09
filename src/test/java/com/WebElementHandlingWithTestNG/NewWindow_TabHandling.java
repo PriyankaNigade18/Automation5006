@@ -11,8 +11,11 @@ public class NewWindow_TabHandling {
   {
 	  WebDriver driver=new ChromeDriver();
 	  driver.get("Https://www.google.com");
+	  for(int i=1;i<=10;i++)
+	  {
 	  WebDriver newTab=driver.switchTo().newWindow(WindowType.TAB);
 	  newTab.get("https://www.facebook.com");
+	  }
 	  
   }
   
@@ -24,5 +27,27 @@ public class NewWindow_TabHandling {
 	  WebDriver newWindow=driver.switchTo().newWindow(WindowType.WINDOW);
 	  newWindow.get("https://www.amazon.com");
 	  
+  }
+  
+  /*
+   * First open google and 
+   * then in new window open facebook 10  times in 10 different tabs
+
+   */
+  @Test
+  public void scenario()
+  {
+	  WebDriver driver=new ChromeDriver();
+	  driver.get("https://www.google.com");
+	  System.out.println("Google open");
+	  
+	  WebDriver nWindow=driver.switchTo().newWindow(WindowType.WINDOW);
+	  
+	  //newWindow.get("https://www.facebook.com");
+	  for(int i=1;i<=10;i++)
+	  {
+	  WebDriver newTab=nWindow.switchTo().newWindow(WindowType.TAB);
+	  newTab.get("https://www.facebook.com");
+	  }
   }
 }
