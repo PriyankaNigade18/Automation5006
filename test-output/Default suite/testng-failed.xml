@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario">
+      <class name="com.PageObjectModel.LoginPageTest">
         <methods>
-          <include name="verifySignIn"/>
+          <include name="setUp"/>
           <include name="validateLogin"/>
-          <include name="verifySignOut"/>
         </methods>
-      </class> <!-- com.TestNGFramework.Annotations.AnnotationCRMRealTimeScenario -->
+      </class> <!-- com.PageObjectModel.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
