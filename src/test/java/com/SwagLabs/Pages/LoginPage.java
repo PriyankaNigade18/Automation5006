@@ -5,7 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SwagLabs.baseTest.BaseTest;
+
 public class LoginPage 
+
 {
 	WebDriver driver;
 	public LoginPage(WebDriver driver)//from base class

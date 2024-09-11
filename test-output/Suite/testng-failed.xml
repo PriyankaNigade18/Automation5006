@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="com.SwagLabs.TestCases.InventoryPageTest">
+      <class name="com.SwagLabs.TestCases.LoginPageTest">
         <methods>
-          <include name="pageSetUp"/>
-          <include name="validateProductDetails"/>
+          <include name="validateUrl"/>
           <include name="setUp"/>
-          <include name="validateProductCount"/>
-          <include name="validateCartPageInit"/>
-          <include name="validateAddToCart"/>
+          <include name="validateTitle"/>
         </methods>
-      </class> <!-- com.SwagLabs.TestCases.InventoryPageTest -->
+      </class> <!-- com.SwagLabs.TestCases.LoginPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

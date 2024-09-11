@@ -12,4 +12,22 @@
          <class name="com.SwagLabs.TestCases.InventoryPageTest"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test thread-count="5" name="CartTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.CartPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="CheckcoutTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.CheckoutPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="OverviewTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.OverviewPageTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
