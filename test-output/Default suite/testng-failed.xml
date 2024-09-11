@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.PageObjectModel.LoginPageTest">
+      <class name="com.dataDrivenTest.HrmApp">
         <methods>
-          <include name="setUp"/>
-          <include name="validateLogin"/>
+          <include name="tetsLogin" invocation-numbers="1 3"/>
         </methods>
-      </class> <!-- com.PageObjectModel.LoginPageTest -->
+      </class> <!-- com.dataDrivenTest.HrmApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -41,13 +41,27 @@ public class NewWindow_TabHandling {
 	  driver.get("https://www.google.com");
 	  System.out.println("Google open");
 	  
-	  WebDriver nWindow=driver.switchTo().newWindow(WindowType.WINDOW);
-	  
-	  //newWindow.get("https://www.facebook.com");
-	  for(int i=1;i<=10;i++)
-	  {
-	  WebDriver newTab=nWindow.switchTo().newWindow(WindowType.TAB);
-	  newTab.get("https://www.facebook.com");
-	  }
+	  WebDriver newWi=driver.switchTo().newWindow(WindowType.WINDOW);
+	  // Switch to the new window
+      newWi.get("https://www.facebook.com");
+      System.out.println("Facebook opened in the first tab of the new window");
+
+      // Open Facebook in 9 additional tabs within the new window
+      for (int i = 0; i < 9; i++) {
+          // Open a new tab
+          newWi.switchTo().newWindow(WindowType.TAB);
+
+          // Navigate to Facebook
+          newWi.get("https://www.facebook.com");
+//	  newWi.switchTo().newWindow(WindowType.TAB);
+//	  newWi.get("https://www.facebook.com");
+//	  /*
+//	  for(int i=1;i<=10;i++)
+//	  {
+//	 newWi.switchTo().newWindow(WindowType.TAB);
+//	 newWi.get("https://www.facebook.com");
+//	  }
+//	
+      }
   }
 }

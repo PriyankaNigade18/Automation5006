@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-10T21:25:11 IST" name="Default suite" finished-at="2024-09-10T21:25:20 IST" duration-ms="8364">
+  <suite started-at="2024-09-11T22:21:20 IST" name="Default suite" finished-at="2024-09-11T22:21:27 IST" duration-ms="7111">
     <groups>
     </groups>
-    <test started-at="2024-09-10T21:25:11 IST" name="Default test" finished-at="2024-09-10T21:25:20 IST" duration-ms="8364">
-      <class name="com.PageObjectModelUsingPageFactory.LoginPageTestUsingPageFactory">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.PageObjectModelUsingPageFactory.LoginPageTestUsingPageFactory@53ce1329]" started-at="2024-09-10T21:25:11 IST" name="setUp" finished-at="2024-09-10T21:25:17 IST" duration-ms="6016" status="PASS">
+    <test started-at="2024-09-11T22:21:20 IST" name="Default test" finished-at="2024-09-11T22:21:27 IST" duration-ms="7111">
+      <class name="com.takeScreenshot.ScreenshotDemo">
+        <test-method signature="testCapture()[pri:0, instance:com.takeScreenshot.ScreenshotDemo@21e360a]" started-at="2024-09-11T22:21:20 IST" name="testCapture" finished-at="2024-09-11T22:21:27 IST" duration-ms="7020" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateTitle()[pri:1, instance:com.PageObjectModelUsingPageFactory.LoginPageTestUsingPageFactory@53ce1329]" started-at="2024-09-10T21:25:17 IST" name="validateTitle" finished-at="2024-09-10T21:25:17 IST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitle -->
-        <test-method signature="validateLogin()[pri:2, instance:com.PageObjectModelUsingPageFactory.LoginPageTestUsingPageFactory@53ce1329]" started-at="2024-09-10T21:25:17 IST" name="validateLogin" finished-at="2024-09-10T21:25:20 IST" duration-ms="2251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogin -->
-      </class> <!-- com.PageObjectModelUsingPageFactory.LoginPageTestUsingPageFactory -->
+        </test-method> <!-- testCapture -->
+      </class> <!-- com.takeScreenshot.ScreenshotDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

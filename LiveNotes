@@ -972,9 +972,14 @@ Cross browser Test/Parallel Test
 
 Data driven Framework
 ==========================
+what is data driven testing?
+--------------------------------
+Executing same set of action with multiple data multiple time
+
 1.Using array
 2.Using Excel File-->Apache POI
 
+@DataProvider
 
 Screenshots
 ================
