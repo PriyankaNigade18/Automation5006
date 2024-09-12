@@ -964,10 +964,10 @@ Ways
 2.Using PageFactory
 
 
+Hybrid Driven Framework
+==========================
+done
 
-
-Cross browser Test/Parallel Test
-==================================
 
 
 Data driven Framework
@@ -983,14 +983,21 @@ Executing same set of action with multiple data multiple time
 
 Screenshots
 ================
+done
 
+12-09-2024
+====================
 
-Hybrid Driven Framework
-==========================
-
+Cross browser Test/Parallel Test
+==================================
+done
 Reporting
 ===============
 1.Listeners
+--------------------
+1.Add listeners using @Listerners annotation
+2.Add listeners using xml
+
 2.Extent Report
 
 

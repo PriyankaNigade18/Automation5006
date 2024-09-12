@@ -1,17 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T22:21:20 IST" name="Default suite" finished-at="2024-09-11T22:21:27 IST" duration-ms="7111">
+  <suite started-at="2024-09-12T21:43:12 IST" name="Suite" finished-at="2024-09-12T21:43:19 IST" duration-ms="7186">
     <groups>
     </groups>
-    <test started-at="2024-09-11T22:21:20 IST" name="Default test" finished-at="2024-09-11T22:21:27 IST" duration-ms="7111">
-      <class name="com.takeScreenshot.ScreenshotDemo">
-        <test-method signature="testCapture()[pri:0, instance:com.takeScreenshot.ScreenshotDemo@21e360a]" started-at="2024-09-11T22:21:20 IST" name="testCapture" finished-at="2024-09-11T22:21:27 IST" duration-ms="7020" status="PASS">
+    <test started-at="2024-09-12T21:43:12 IST" name="Test" finished-at="2024-09-12T21:43:19 IST" duration-ms="7186">
+      <class name="com.TestNGFramework.Listeners.CRMTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestNGFramework.Listeners.CRMTest@4659191b]" started-at="2024-09-12T21:43:12 IST" name="setUp" finished-at="2024-09-12T21:43:17 IST" duration-ms="4700" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCapture -->
-      </class> <!-- com.takeScreenshot.ScreenshotDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignIn()[pri:1, instance:com.TestNGFramework.Listeners.CRMTest@4659191b]" started-at="2024-09-12T21:43:17 IST" name="testSignIn" finished-at="2024-09-12T21:43:18 IST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method signature="testLogin()[pri:2, instance:com.TestNGFramework.Listeners.CRMTest@4659191b]" started-at="2024-09-12T21:43:18 IST" name="testLogin" finished-at="2024-09-12T21:43:19 IST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testTitle()[pri:3, instance:com.TestNGFramework.Listeners.CRMTest@4659191b]" started-at="2024-09-12T21:43:19 IST" name="testTitle" finished-at="2024-09-12T21:43:19 IST" duration-ms="209" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title is wrong expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title is wrong expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.TestNGFramework.Listeners.CRMTest.testTitle(CRMTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method signature="testSignOut()[pri:4, instance:com.TestNGFramework.Listeners.CRMTest@4659191b]" started-at="2024-09-12T21:43:19 IST" name="testSignOut" finished-at="2024-09-12T21:43:19 IST" depends-on-methods="com.TestNGFramework.Listeners.CRMTest.testTitle" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.TestNGFramework.Listeners.CRMTest.testSignOut() on instance com.TestNGFramework.Listeners.CRMTest@4659191b depends on not successfully finished methods 
+[com.TestNGFramework.Listeners.CRMTest.testTitle() on instance com.TestNGFramework.Listeners.CRMTest@4659191b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.TestNGFramework.Listeners.CRMTest.testSignOut() on instance com.TestNGFramework.Listeners.CRMTest@4659191b depends on not successfully finished methods 
+[com.TestNGFramework.Listeners.CRMTest.testTitle() on instance com.TestNGFramework.Listeners.CRMTest@4659191b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignOut -->
+      </class> <!-- com.TestNGFramework.Listeners.CRMTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -2,6 +2,8 @@ package com.takeScreenshot;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -17,9 +19,10 @@ public class ScreenshotDemo {
 	  WebDriver driver=new ChromeDriver();
 	  driver.get("https://www.amazon.in");
 	  
+	  String timestamp=new SimpleDateFormat("yyyy.MM.dd.hh.mm.ss").format(new Date());
 	  TakesScreenshot ts=(TakesScreenshot) driver;
 	  File temp=ts.getScreenshotAs(OutputType.FILE);
-	  File dest=new File(System.getProperty("user.dir")+"//Screenshots//amazon1.png");
+	  File dest=new File(System.getProperty("user.dir")+"//Screenshots//amazon"+timestamp+".png");
 	  
 	  FileHandler.copy(temp, dest);
 	  
