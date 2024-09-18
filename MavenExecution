@@ -1,0 +1,31 @@
+
+Maven is build management /Project management tool
+
+https://maven.apache.org/guides/index.html
+
+How to execute maven projects
+================================
+We execute a project using maven Goal
+What is Goal(Steps/Actions)
+----------------------------------
+1.clean = delete all the files from target folder
+2.test =test the project
+3.install = installation+test
+To execute maven project we need to add certain plugins
+=============================================
+1.Surefire plugin
+https://maven.apache.org/surefire/maven-surefire-plugin/
+2.compliler plugin
+https://maven.apache.org/plugins/maven-compiler-plugin/
+
+Maven project We can run using 3 process
+=============================================
+1.Using POM.xml file- using goals
+
+2.Using CLI/Platform
+----------------------------
+1.download maven on Local machine
+https://maven.apache.org/download.cgi
+3. Using Jenkins
+
+
