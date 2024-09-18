@@ -6,9 +6,8 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/FeaturesFile/Opencart.feature",
-					glue="stepdef",
-					tags="@Regression")
-public class OpenCartRunner {
+@CucumberOptions(features="src/test/resources/FeaturesFile/Datadriven.feature",
+					glue="stepdef")
+public class HrmRunner {
 
 }
