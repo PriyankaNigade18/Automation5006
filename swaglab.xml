@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.listeners.ExtentITestNGListeners"></listener>
+<listener class-name="com.SwagLabs.Utility.ExtentManager"></listener>
+</listeners>
+  <test thread-count="5" name="LoginTest">
+    <classes>
+      <class name="com.SwagLabs.TestCases.LoginPageTest"/>
+
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="InventoryTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.InventoryPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="CartTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.CartPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="CheckcoutTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.CheckoutPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="OverviewTest">
+    <classes>
+         <class name="com.SwagLabs.TestCases.OverviewPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
