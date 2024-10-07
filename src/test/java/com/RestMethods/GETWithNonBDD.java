@@ -92,7 +92,9 @@ public class GETWithNonBDD {
 	  
 	  RestAssured.baseURI="https://reqres.in/api";
 	  //request specification
-	   RestAssured.given().body("{\n"
+	   RestAssured.given()
+	   .contentType("application/json")
+	   .body("{\n"
 	 		+ "    \"name\": \"morpheus\",\n"
 	 		+ "    \"job\": \"leader\"\n"
 	 		+ "}");
