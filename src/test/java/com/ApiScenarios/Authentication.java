@@ -42,10 +42,48 @@ public class Authentication {
 	  Assert.assertTrue(status==true);
 	  System.out.println("Test Pass: As Authenticated is true!");
 	  
+	   
+  }
+  
+  @Test
+  public void testDigestAuth()
+  {
+	  Response res=given()
+	  .auth().digest("postman","password")
+	  .when()
+	  .get("https://postman-echo.com/digest-auth");
 	  
+	  System.out.println(res.asPrettyString());
+	  System.out.println("Status is: "+res.jsonPath().getBoolean("authenticated"));
 	  
+	 }
+  
+  @Test
+  public void testBearerToken()
+  {
+	  Response res=given()
+	  .header("Authorization","Bearer 181818")
 	  
+	  .when()
+	  .get("https://postman-echo.com");
 	  
+	int actCode=res.statusCode();
+	Assert.assertEquals(actCode,200);
+	System.out.println("Authentication success");
+	System.out.println(res.asPrettyString());
+	  
+  }
+  
+  @Test
+  public void testOAuth2()
+  {
+	  
+	  Response res=given()
+	  .auth().oauth2("7777777")
+	  .when()
+	  .get("https://postman-echo.com");
+	  
+	  System.out.println(res.statusCode());
 	  
 	  
   }

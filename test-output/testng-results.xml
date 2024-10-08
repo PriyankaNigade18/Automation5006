@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-07T22:12:49 IST" name="Default suite" finished-at="2024-10-07T22:12:53 IST" duration-ms="4487">
+  <suite started-at="2024-10-08T20:57:09 IST" name="Default suite" finished-at="2024-10-08T20:57:16 IST" duration-ms="6326">
     <groups>
     </groups>
-    <test started-at="2024-10-07T22:12:49 IST" name="Default test" finished-at="2024-10-07T22:12:53 IST" duration-ms="4487">
+    <test started-at="2024-10-08T20:57:09 IST" name="Default test" finished-at="2024-10-08T20:57:16 IST" duration-ms="6326">
       <class name="com.ApiScenarios.Authentication">
-        <test-method signature="testBasicAuthentication()[pri:0, instance:com.ApiScenarios.Authentication@1da2cb77]" started-at="2024-10-07T22:12:49 IST" name="testBasicAuthentication" finished-at="2024-10-07T22:12:53 IST" duration-ms="4417" status="PASS">
+        <test-method signature="testOAuth2()[pri:0, instance:com.ApiScenarios.Authentication@a530d0a]" started-at="2024-10-08T20:57:09 IST" name="testOAuth2" finished-at="2024-10-08T20:57:16 IST" duration-ms="6252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBasicAuthentication -->
+        </test-method> <!-- testOAuth2 -->
       </class> <!-- com.ApiScenarios.Authentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
