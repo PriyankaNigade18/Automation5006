@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-10T22:02:22 IST" name="Default suite" finished-at="2024-10-10T22:02:33 IST" duration-ms="11161">
+  <suite started-at="2024-10-14T22:13:44 IST" name="Default suite" finished-at="2024-10-14T22:14:00 IST" duration-ms="16120">
     <groups>
     </groups>
-    <test started-at="2024-10-10T22:02:22 IST" name="Default test" finished-at="2024-10-10T22:02:33 IST" duration-ms="11161">
-      <class name="com.driverSession.DriverSessionWithAppPackage_ActivityName">
-        <test-method signature="testSession()[pri:0, instance:com.driverSession.DriverSessionWithAppPackage_ActivityName@53aac487]" started-at="2024-10-10T22:02:22 IST" name="testSession" finished-at="2024-10-10T22:02:33 IST" duration-ms="11081" status="PASS">
+    <test started-at="2024-10-14T22:13:44 IST" name="Default test" finished-at="2024-10-14T22:14:00 IST" duration-ms="16120">
+      <class name="com.mobileElmentsScenario.DragGestureTest">
+        <test-method signature="testDragGesture()[pri:0, instance:com.mobileElmentsScenario.DragGestureTest@6cd28fa7]" started-at="2024-10-14T22:13:44 IST" name="testDragGesture" finished-at="2024-10-14T22:14:00 IST" duration-ms="16056" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSession -->
-      </class> <!-- com.driverSession.DriverSessionWithAppPackage_ActivityName -->
+        </test-method> <!-- testDragGesture -->
+      </class> <!-- com.mobileElmentsScenario.DragGestureTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
