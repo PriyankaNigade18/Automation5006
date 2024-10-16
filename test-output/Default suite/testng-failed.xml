@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mobileElmentsScenario.ScrollGestureTest">
+      <class name="com.mobileElmentsScenario.HybridWebViewTest">
         <methods>
-          <include name="testScroll"/>
+          <include name="hybridTest"/>
         </methods>
-      </class> <!-- com.mobileElmentsScenario.ScrollGestureTest -->
+      </class> <!-- com.mobileElmentsScenario.HybridWebViewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

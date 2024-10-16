@@ -1,6 +1,12 @@
 package com.Generic;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import com.google.common.collect.ImmutableMap;
@@ -9,6 +15,23 @@ import io.appium.java_client.AppiumDriver;
 
 public class MobileUtility 
 {
+	
+	//screenshotutility
+	public static void takeScreenshot(AppiumDriver driver)
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File temp=ts.getScreenshotAs(OutputType.FILE);
+		File dest=new File(System.getProperty("user.dir")+"//Screenshots//APIDemos"+System.currentTimeMillis()+".png");
+		try {
+			FileHandler.copy(temp,dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
 	
 	//swipe
 	public static void swipeLeft(AppiumDriver driver,WebElement ele)
